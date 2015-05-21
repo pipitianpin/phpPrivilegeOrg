@@ -1,0 +1,167 @@
+/*================================================= */
+/* Buttons
+================================================== */
+.button {
+	padding: 7px 14px;
+	display: inline-block;
+	border: 0px;
+	font-family: Tahoma, Arial, sans-serif;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.button.medium {padding: 8px 20px; font-size: 14px;}
+.button.large {padding: 9px 26px; font-size: 15px;}
+
+.button.gray {color: #fff;background: #505050;}
+.button.gray:hover {background:#81b600;}
+
+.button.light {color:#fff; background:#aaaaaa;}
+.button.light:hover {background:#81b600;}
+
+.button.green{color:#fff; background:#81b600;}
+.button.green:hover {background:#aaa;}
+
+/* Input Version */
+input[type="submit"],
+input[type="button"] {
+	color: #fff;
+	background: #6f9c00;
+	padding: 7px 14px;
+	display: inline-block;
+	border: 0px;
+	font-family: Tahoma, Arial, sans-serif;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {background:#81b600;}
+
+/*================================================= */
+/* Blockquote
+================================================== */
+blockquote {border-left: 3px solid #e1e1e1; padding-left: 20px;}
+blockquote p {padding: 5px 0;}
+blockquote h5 {font-size: 14px; font-weight: bold; letter-spacing: -0.5px;}
+blockquote h5 span {color: #a0a0a0; font-weight: normal;}
+
+/*================================================= */
+/* Alert Boxes
+================================================== */
+.alert{ width:100%; line-height:45px; text-align: center; font-weight: normal; margin-bottom: 12px; font-family: Tahoma, Arial, sans-serif;}
+.pink{background:#fff2f2; border:1px solid #ffc8c8; color:#ee6b6b}
+.greenb{background:#ecf7e2; border:1px solid #b1db7f; color:#74a43a}
+.light_pink{background:#fcfbdf; border:1px solid #ddd487;color:#aba64e}
+.light_blue{background:#eaf8ff; border:1px solid #b4d6e7;color:#68a1bd}
+
+/*================================================= */
+/* Accordion
+================================================== */
+.acc-trigger {
+	border: 1px solid #dedede;
+	cursor: pointer;
+	display: block;
+	margin: 10px 0;
+	background: #fafafa;
+}
+
+.acc-trigger a {
+	background: url(../images/accordion_plus_ico.png) no-repeat right;
+	display: block;
+	color: #999;
+	outline:  none;
+	padding: 9px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+.acc-trigger.active a {cursor: default; background: url(../images/accordion_minus_ico.png) no-repeat right;}
+.acc-trigger a:hover, .acc-trigger.active a{color: #555;}
+.acc-trigger a h3 {font-weight: bold; font-size: 14px; letter-spacing: -0.5px; line-height: 28px; color: #777;}
+.acc-container .content{ padding: 2px 15px 5px 15px;}
+.content p { margin-bottom: 10px;}
+
+
+/*================================================= */
+/* Tabs
+================================================== */
+.tabs-nav {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
+.tabs-nav li {
+	float: left;
+	line-height: 32px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+.tabs-nav li.active { line-height: 31px; }
+
+.tabs-nav li a {
+	background: #f9f9f9;
+	border: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	border-left: none;
+	color: #999;
+	display: block;
+	letter-spacing: 0;
+	outline: none;
+	padding: 0 16px;
+	text-decoration: none;
+}
+
+.tabs-nav li:first-child a { border-left: 1px solid #dedede; }
+
+.tabs-nav li.active a { color: #6f9c00; }
+				
+.tabs-nav li.active a  {
+	background: #fff;
+	border-bottom: 2px solid #fff;
+	border-top: 1px solid #8dc700;
+}
+
+.tabs-container {
+	border: 1px solid #dedede;
+	margin: -1px 0 20px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.tab-content {padding: 10px; font-size: 12px;}
+
+/*================================================= */
+/* List Styles
+================================================== */
+.check_list li, .plus_list li, .minus_list li, .star_list li, .arrow_list li, .square_list li, .circle_list li, .cross_list li {list-style: none;margin: 8px 0;}
+
+.check_list li {background: url(../images/list_check.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
+.plus_list  li {background: url(../images/list_plus.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
+.minus_list  li {background: url(../images/list_minus.png) no-repeat 0% 50%; padding: 0 0 0 18px;}
+.star_list  li {background: url(../images/list_star.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.arrow_list  li {background: url(../images/list_arrow.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.square_list  li {background: url(../images/list_square.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.circle_list  li {background: url(../images/list_circle.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+.cross_list  li {background: url(../images/list_cross.png) no-repeat 0% 50%; padding: 0 0 0 16px;}
+
+
+
+
+
+

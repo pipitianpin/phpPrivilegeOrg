@@ -1,0 +1,338 @@
+img {
+    border:none;
+}
+
+.control_bar {
+    position:absolute;
+    top:310px;
+    /*background-color:#f00;*/
+    width:620px;
+    height:35px;
+    padding:0px 5px 0px 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+
+    z-index:999;
+    margin-left:5px;
+    background: rgb(132,137,137) 0.4;   /* Fallback for web browsers that doesn't support RGBa....this is for making child with opacity 1 , with parent opacity..something like .5 */
+    background: rgba(132,137,137, 0.4);   /* RGBa with 0.6 opacity */
+    background: url(../images/embedPlayer/control_bar_bg.png) repeat;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";  /* For IE 8*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);  /* For IE 5.5 - 7*/    
+    /*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; */ /* for ie8 */
+    /*filter: alpha(opacity=50);*/					/* for ie 5-7 */
+    /*padding:1px 5px 5px 5px;*/
+    behavior: url(css/browser-specific/PIE.htc);
+}
+.control_bar_fullscreen {
+    position:relative;
+    top:-50px !important;
+    /*margin-bottom :50px;*/
+    margin-left:auto;
+    margin-right:auto;	
+    width:650px !important;
+    /*z-index:9999;*/
+}
+.control_bar_fullscreen_on_devices{
+    position:relative;
+    top:-50px;
+    margin-left:auto;
+    margin-right:auto;	
+    width:50em !important;
+    z-index:999999;
+}
+div#player1 {
+    position:relative;
+    z-index:998;
+
+}
+.control_bar * {
+
+}
+#loader {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    opacity:.7;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";  /* for ie8 */
+    filter: alpha(opacity=70);				/* for ie 5-7 */
+    display:none;
+    position:absolute;
+    top:150px;
+    left:300px;
+    width:50px;
+    height:30px;
+    background: url(../images/embedPlayer/ajax-loader.gif) center center no-repeat;
+    background-color:#918888; 
+
+    padding:20px 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    z-index:999;
+    cursor:hand !important;
+    behavior: url(css/browser-specific/PIE.htc);
+
+    /*padding:1px 5px 5px 5px;*/
+}
+#error {
+    z-index:999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    opacity:.7;
+    display:none;
+    position:absolute;
+    top:130px;
+    left:220px;
+    width:190px;
+    height:50px;
+    color:#000;
+    font-size:13px;
+    font-family:Times;
+    background: url(../images/embedPlayer/caution_sign.png) no-repeat 95% center;
+    background-color:#918888;
+    padding: 5px 45px 5px 5px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    /*padding-right:45px !important;*/
+    /*padding:1px 5px 5px 5px;*/
+}
+input{
+    cursor:hand;
+}
+button {
+    cursor:hand;
+}
+a, a:hover, a:active, a:visited {
+    border:none;
+    text-decoration:none;
+    color:inherit;
+}
+a.play_button {
+    display:inline;
+    text-decoration:none;
+    padding:7px 12px 3px 12px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(css/browser-specific/PIE.htc);
+}
+.play_button:hover {
+    background-color:#1AC7CC;
+}
+.time_slider_range{
+
+    position:relative;
+    display:inline-block;
+    /*width:56%;*/
+}
+#volume_bar {
+    height:18px;
+    width:18px;
+    color:#000;
+    font-family:Times, "Hoefler Text", "Liberation Serif", "Times New Roman", serif;
+
+}
+.volume:hover {
+    opacity:.7;
+}
+.volume_bars {
+    position:relative;
+    bottom:3px;
+}
+.volume_bars:hover{
+    font-size:18px;
+}
+.state_toggle {
+    color:#000 !important;
+}
+#volume_bar1 {
+    color:#1AC7CC;
+}
+.vertical {
+    width: 30px;
+    color:#f00;
+    height: 70px; -webkit-appearance: slider-vertical; writing-mode: bt-lr;
+}
+.control_bar_text {
+    font-size:12px;
+    position:relative;
+    bottom:3px;
+    font-weight:bold;
+    color:#000;
+
+}
+
+.player_sprite_img{
+    background-image: url(../images/embedPlayer/player_sprites.png);
+    background-repeat: no-repeat;
+    display:inline-block;
+    position:relative;
+}
+.s-10back{
+    width: 25px;
+    height: 25px;
+    top:5px;
+    background-position: -10px -20px ;
+}
+.s-10back:hover {
+    background-position: -60px -20px ;
+}
+.s-10forward{
+    width: 25px;
+    height: 25px;
+    top:5px;
+    background-position: -110px -20px ;
+}
+.s-10forward:hover {
+    background-position: -160px -20px ;
+}
+.s-volume{
+    width: 25px;
+    height: 25px;
+    top:10px;
+    background-position: -417px -20px ;
+} 
+.s-volume:hover{
+    background-position: -467px -20px ;
+}
+.s-volume-mute{
+    width: 25px;
+    height: 25px;
+    top:10px;
+    background-position: -517px -20px ;
+} 
+.s-volume-mute:hover{
+    background-position: -567px -20px ;
+}
+.full_screen_color {
+    background-position: -216px -20px ;
+    width: 15px;
+    height: 15px;
+}
+.full_screen_color:hover{
+    background-position: -267px -20px ;
+}
+.normal_screen{
+    background-position: -318px -20px ;
+    width: 15px;
+    height: 15px;
+}
+.normal_screen:hover{
+    background-position: -367px -20px ;
+}
+/*-----customisation of Jquery slider ----*/
+#seek-bar {
+    background-color:#1AC7CC; }
+
+.ui-slider .ui-slider-range {
+}
+.ui-slider-handle {
+
+}
+
+
+
+
+/*-----end of customisation of Jquery slider ----*/
+
+/*----Fullscreen pseudo class--------------------*/
+#player1:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+}
+#player1:-moz-full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+#player1:-ms-fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+#player1:fullscreen {
+    width: 100%;
+    height: 100%;
+}
+.handDevicePlayerWrapper {
+    position:fixed !important;
+    left:0;right:0;top:0;bottom:0;
+    width:100%;
+    height:100%;
+    background-color:#000;	
+    overflow:hidden;
+    z-index:99999;
+}
+.positionPlayerOnDeviceInFullscreen {
+    top:50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: tranlslateY(-50%);
+    transform: translateY(-50%);
+    margin-left:auto;
+    margin-right:auto;
+}
+/*.applePlayer {
+        width:100%;
+}*/
+
+/*#player_control_wrapper:-webkit-full-screen {
+        width:100%;
+}*/
+
+/*end of full screen psedudo class --------------*/
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+
+}
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    /* #volume_bar, #mute {
+                   display:none;*/
+} 
+
+
