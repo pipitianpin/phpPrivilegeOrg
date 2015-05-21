@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015-05-22 01:13:41
+-- Generation Time: 2015-05-22 01:30:01
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `company_info` (
 --
 
 INSERT INTO `company_info` (`company_id`, `company_name`, `company_desc`, `company_phone`, `company_file_address`, `company_email`, `company_file_name`) VALUES
-(1, 'php', 'Sample Company', '000-000-000', 'assets/img/logo/logo.png', 'gangliuleon@gmail.com', 'logo.png');
+(1, 'php', 'Sample Company', '000-000-000', 'assets/img/logo/logo.png', 'usa_mba@sina.com', 'logo.png');
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,14 @@ CREATE TABLE IF NOT EXISTS `login_attempts` (
   `login` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `login_attempts`
+--
+
+INSERT INTO `login_attempts` (`id`, `ip_address`, `login`, `time`) VALUES
+(1, '::1', 'org-admin@com.co.nz', '2015-05-21 23:27:24');
 
 -- --------------------------------------------------------
 
@@ -412,7 +419,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `activated`, `banned`, `ban_reason`, `new_password_key`, `new_password_requested`, `new_email`, `new_email_key`, `last_ip`, `last_login`, `created`, `expiry_basetime`, `modified`, `guest_time_out`, `role_id`, `first_name`, `last_name`) VALUES
-(59, 'test', '$P$Bs3sSiq2zWjH1aFZdKJ/aasZNdAdyz.', 'org_admin@com.co.nz', 1, 0, NULL, NULL, NULL, NULL, 'e580d5f16ac735b965040fdf91022882', '::1', '2015-05-22 01:00:28', '2015-03-17 15:31:42', '2015-03-17 15:49:34', '2015-05-21 23:01:39', NULL, 1, 'test1', 'auckland'),
+(59, 'test', '$2a$08$0mreLLmppTc10cJbbHWCGOH6.LuceguP7edh5KepeY4EIDAS4uXay', 'org_admin@com.co.nz', 1, 0, NULL, NULL, NULL, NULL, 'e580d5f16ac735b965040fdf91022882', '::1', '2015-05-22 01:28:20', '2015-03-17 15:31:42', '2015-03-17 15:49:34', '2015-05-21 23:28:20', NULL, 1, 'test1', 'auckland'),
 (60, 'sample', '$P$BhYH9OFVEoYZm0tvrM5b1hV5bvc/zx/', 'org_user@com.co.nz', 1, 0, NULL, NULL, NULL, NULL, '1dccd07fad36e0fbc96cdeaca71caf8e', '121.98.113.66', '2015-05-20 16:35:19', '2015-03-31 09:04:07', '2015-05-20 16:35:19', '2015-05-21 04:35:39', NULL, 3, NULL, NULL),
 (79, 'test2', '$P$BpjL8kBiDG1bKNLUmuZhfMLK8pQZit/', 'test2@com.co.nz', 1, 0, NULL, NULL, NULL, NULL, '466e7e1896833003bd68549d0270d61f', '127.0.0.1', '2015-05-21 09:41:13', '2015-04-28 14:38:23', '2015-05-21 09:41:13', '2015-05-21 23:01:47', NULL, 3, 'test2', 'pipi'),
 (128, '', '$P$Bg6eJ7s1iqVdhTmQWufAcfB0XaQs9o0', 'uploaduser772@ddd.com', 1, 0, NULL, NULL, NULL, NULL, '7d619ac4fb113c629ac7116605e4ac65', '127.0.0.1', '0000-00-00 00:00:00', '2015-05-06 14:22:24', '2015-05-06 14:22:24', '2015-05-06 02:21:22', NULL, 3, 'upload', 'user'),
