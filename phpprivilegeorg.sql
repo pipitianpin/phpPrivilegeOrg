@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015-05-22 01:30:01
+-- Generation Time: 2015-05-22 03:18:45
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -114,9 +114,9 @@ CREATE TABLE IF NOT EXISTS `org` (
 --
 
 INSERT INTO `org` (`id`, `org_name`, `parent_id`, `isActive`) VALUES
-(141, 'LGNZ', NULL, 1),
-(142, 'RTU Group', 141, 1),
-(146, 'lawyer2', 141, 1),
+(141, 'Org', NULL, 1),
+(142, 'org3', 141, 1),
+(146, 'org2', 141, 1),
 (147, 'Test Org', NULL, 1),
 (148, 'Test1', 147, 1),
 (149, 'Test2', 147, 1),
@@ -129,7 +129,7 @@ INSERT INTO `org` (`id`, `org_name`, `parent_id`, `isActive`) VALUES
 (156, 'Test2-3', 149, 1),
 (157, 'Test3-1', 150, 1),
 (158, 'Test3-2', 150, 1),
-(160, 'dd', 141, 1);
+(160, 'org1', 141, 1);
 
 -- --------------------------------------------------------
 
