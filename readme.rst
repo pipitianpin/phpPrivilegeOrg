@@ -3,6 +3,7 @@ What is phpPrivilegeOrg
 ###################
 
 phpPrivilegeOrg is an toolkit for people who need privilege and organization management using PHP and CodeIgniter.
+
 It's the first software in PHP codeigniter framework which offer privilege, role and organization management in the world.
 It offer similar function like big business system such as SAP, Oracle,Microsoft Navision.
 
